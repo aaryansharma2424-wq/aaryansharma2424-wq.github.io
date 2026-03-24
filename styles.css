@@ -638,6 +638,17 @@ price-card {
   color: var(--muted);
 }
 
+.footer a {
+  color: inherit;
+  transition: color 180ms ease, text-shadow 180ms ease;
+}
+
+.footer a:hover,
+.footer a:focus-visible {
+  color: var(--accent);
+  text-shadow: 0 0 18px rgba(246, 179, 76, 0.35);
+}
+
 .floating-call {
   position: fixed;
   right: 20px;
