@@ -28,7 +28,7 @@ body {
     radial-gradient(circle at top left, rgba(246, 179, 76, 0.18), transparent 30%),
     radial-gradient(circle at 85% 15%, rgba(255, 122, 24, 0.16), transparent 24%),
     linear-gradient(145deg, #080808 0%, #101010 48%, #060606 100%);
-  padding-top: 108px;
+  padding-top: 110px;
 }
 
 body::before {
@@ -51,12 +51,12 @@ a {
 .site-shell {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 22px 0 40px;
+  padding: 12px 0 40px;
 }
 
 .topbar {
   position: fixed;
-  top: 18px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: min(1180px, calc(100% - 32px));
@@ -67,8 +67,8 @@ a {
   gap: 16px;
   padding: 16px 20px;
   border: 1px solid var(--line);
-  border-radius: 22px;
-  background: rgba(10, 10, 10, 0.72);
+  border-radius: 0 0 22px 22px;
+  background: rgba(10, 10, 10, 0.86);
   backdrop-filter: blur(18px);
   box-shadow: var(--shadow);
 }
@@ -423,9 +423,10 @@ section {
 
 .price-card h3 {
   margin: 0 0 12px;
-  font-family: "Oswald", sans-serif;
-  font-size: 3.2rem;
-  letter-spacing: 0.03em;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3.35rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
   line-height: 1;
 }
 
@@ -640,11 +641,11 @@ section {
   right: 20px;
   bottom: 20px;
   z-index: 30;
-  display: none;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   background: linear-gradient(135deg, #1fc95b, #11a840);
   color: #ffffff;
@@ -652,8 +653,8 @@ section {
 }
 
 .floating-call svg {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
 }
 
@@ -707,18 +708,19 @@ section {
 @media (max-width: 760px) {
   .site-shell {
     width: min(100% - 20px, 1180px);
-    padding-top: 14px;
+    padding-top: 8px;
   }
 
   body {
-    padding-top: 154px;
+    padding-top: 152px;
   }
 
   .topbar {
-    top: 10px;
+    top: 0;
     width: min(100% - 20px, 1180px);
     flex-wrap: wrap;
     justify-content: center;
+    border-radius: 0 0 20px 20px;
   }
 
   .nav {
@@ -756,14 +758,7 @@ section {
     flex-direction: column;
     align-items: start;
   }
-
-  .floating-call {
-    display: inline-flex;
-  }
 }
-
-
-  .floating-call {
-    display: inline-flex;
+display: inline-flex;
   }
 }
