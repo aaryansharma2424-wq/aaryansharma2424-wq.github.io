@@ -708,31 +708,45 @@ section {
 @media (max-width: 760px) {
   .site-shell {
     width: min(100% - 20px, 1180px);
-    padding-top: 8px;
+    padding-top: 0;
   }
 
   body {
-    padding-top: 152px;
+    padding-top: 98px;
   }
 
   .topbar {
     top: 0;
-    width: min(100% - 20px, 1180px);
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 0 0 20px 20px;
-  }
+    width: 100%;
+    padding: 10px 14px;
+    gap: 10px;
+    border-radius: 0;
+    justify-content: flex-start;
 
   .nav {
-    order: 3;
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 14px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 16px;
+    padding-bottom: 2px;
+    scrollbar-width: none;
   }
 
-  .hero {
-    padding-top: 48px;
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+  
+    .hero {
+    padding-top: 34px;
   }
 
   .trainer-photo-card img {
