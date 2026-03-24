@@ -712,17 +712,22 @@ section {
   }
 
   body {
-    padding-top: 98px;
+    padding-top: 0;
   }
 
   .topbar {
-    top: 0;
+    position: relative;
+    top: auto;
     width: 100%;
     padding: 10px 14px;
     gap: 10px;
     border-radius: 0;
     justify-content: flex-start;
-
+    transform: none;
+    left: auto;
+    margin-bottom: 18px;
+    }
+  
   .nav {
     width: 100%;
     justify-content: center;
@@ -746,7 +751,7 @@ section {
   }
   
     .hero {
-    padding-top: 34px;
+    padding-top: 8px;
   }
 
   .trainer-photo-card img {
