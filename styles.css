@@ -28,7 +28,6 @@ body {
     radial-gradient(circle at top left, rgba(246, 179, 76, 0.18), transparent 30%),
     radial-gradient(circle at 85% 15%, rgba(255, 122, 24, 0.16), transparent 24%),
     linear-gradient(145deg, #080808 0%, #101010 48%, #060606 100%);
-  padding-top: 110px;
 }
 
 body::before {
@@ -51,24 +50,22 @@ a {
 .site-shell {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 12px 0 40px;
+  padding: 0 0 40px;
 }
 
 .topbar {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(1180px, calc(100% - 32px));
+  position: sticky;
+  top: 14px;
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
   padding: 16px 20px;
+  margin-top: 18px;
   border: 1px solid var(--line);
-  border-radius: 0 0 22px 22px;
-  background: rgba(10, 10, 10, 0.86);
+  border-radius: 999px;
+  background: rgba(10, 10, 10, 0.78);
   backdrop-filter: blur(18px);
   box-shadow: var(--shadow);
 }
@@ -708,25 +705,19 @@ section {
 @media (max-width: 760px) {
   .site-shell {
     width: min(100% - 20px, 1180px);
-    padding-top: 8px;
+    padding-top: 0;
   }
 
   body {
-    padding-top: 120px;
+    padding-top: 0;
   }
 
   .topbar {
     top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(100% - 20px, 1180px);
     padding: 14px 16px;
     gap: 12px;
-    border-radius: 24px;
+    border-radius: 28px;
     justify-content: flex-start;
-  background: rgba(10, 10, 10, 0.88);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.34);
   }
 
   .brand-lockup {
@@ -771,7 +762,7 @@ section {
   }
 
   .hero {
-    padding-top: 26px;
+    padding-top: 32px;
   }
 
   .trainer-photo-card img {
