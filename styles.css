@@ -708,20 +708,45 @@ section {
 @media (max-width: 760px) {
   .site-shell {
     width: min(100% - 20px, 1180px);
-    padding-top: 0;
+    padding-top: 8px;
   }
 
   body {
-    padding-top: 98px;
+    padding-top: 120px;
   }
 
   .topbar {
-    top: 0;
-    width: 100%;
-    padding: 10px 14px;
-    gap: 10px;
-    border-radius: 0;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(100% - 20px, 1180px);
+    padding: 14px 16px;
+    gap: 12px;
+    border-radius: 24px;
     justify-content: flex-start;
+  background: rgba(10, 10, 10, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.34);
+  }
+
+  .brand-lockup {
+    gap: 10px;
+  }
+
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    font-size: 1rem;
+  }
+
+  .brand-text strong {
+    font-size: 0.96rem;
+  }
+
+  .brand-text small {
+    font-size: 0.6rem;
+    padding: 2px 7px;
   }
 
   .nav {
@@ -746,7 +771,7 @@ section {
   }
 
   .hero {
-    padding-top: 34px;
+    padding-top: 26px;
   }
 
   .trainer-photo-card img {
